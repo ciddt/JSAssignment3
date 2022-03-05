@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: #540b0e;
+}
+
+form .error {
+    color: red;
+    display: block;
+    margin-top: 5px;
+}
+
+.container {
+    background-color: #f8edeb;
+    padding: 30px;
+}
+
+h1 {
+    color: #540b0e;
+    font-weight: 600;
+}
+
+#input-data {
+    background-color: #004b23;
+    color: #f8edeb;
+}
+
+label {
+    font-weight: 600;
+}
+
+.addition button {
+    background-color: #ffddd2;
+    border: 1px solid #e8a598;
+    width: 100%;
+}
+
+.addition input {
+    border-radius: 5px;
+    border: 1px solid #e8a598;
+    background-color: #fff;
+    padding: 7px;
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #edede9;
+}
+
+tr:hover,
+tr:nth-child(even):hover {
+    background-color: #e0fbfc;
+}
+
+th:hover {
+    background-color: #0077b6;
+    color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+    table,
+    p {
+        font-size: 13px;
+    }
+}
+
+
+

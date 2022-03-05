@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - Tạo ứng dụng tính điểm trung bình</title>
+
+    <!-- Link Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header Start -->
+    <header>
+        <div class="container mt-5 rounded-top">
+            <h1 class="text-center">CLASS MARKSHEET</h1>
+            <hr>
+        </div>
+    </header>
+    <!-- Header End -->
+    
+    <!-- Main Start -->
+    <main>
+        <div class="container rounded-bottom">
+            <!-- Input Data Start -->
+            <form action="" id="form-input">
+                <div>
+                    <label for="name" class="form-label">Họ Tên</label>
+                    <input class="form-control" type="text" id="name" name="name" placeholder="Nhập Họ Tên">
+                </div>
+                <div class="mt-3">
+                    <label for="math" class="form-label">Điểm Toán</label>
+                    <input class="form-control" type="number" id="math" name="math" placeholder="Nhập số từ 1 đến 10" min="0" max="10">
+                </div>
+                <div class="mt-3">
+                    <label for="physical" class="form-label">Điểm Lý</label>
+                    <input class="form-control" type="number" id="physical" name="physical" placeholder="Nhập số từ 1 đến 10" min="0" max="10">
+                </div>
+                <div class="mt-3">
+                    <label for="chemistry" class="form-label">Điểm Hóa</label>
+                    <input class="form-control" type="number" id="chemistry" name="chemistry" placeholder="Nhập số từ 1 đến 10" min="0" max="10">
+                </div>
+                <button class="btn mt-3 form-control p-3" type="submit" id="input-data" style="font-size: 18px;">NHẬP DỮ LIỆU</button>
+            </form>
+            <!-- Input Data End -->
+
+            <!-- Table Start -->
+            <div class="container addition">
+                <p style="margin-left: -30px;"><i>***Click vào nút "Tính Điểm Trung Bình" trước khi click vào nút "Xác Định Học Sinh Giỏi"</i></p>
+                <div class="row text-center">
+                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6 col-xx-6 mb-2">
+                        <button class="btn" type="button" id="average">Tính Điểm Trung Bình</button>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-6 col-xl-6 col-xx-6 mb-2">
+                        <button class="btn" type="button" id="level">Xác Định Học Sinh Giỏi</button>
+                    </div>
+                </div>
+                <div class="col-12 mb-2">
+                    <input id="myInput" type="text" placeholder="Search..">
+                </div>
+            </div>
+            <p><i>***Click vào tiêu đề bảng để sắp xếp dữ liệu</i></p>
+            <table id="mark-table" class="table text-center">
+                <thead class="table-primary">
+                    <th id="table-list">STT</th>
+                    <th id="fullname">Họ Tên</th>
+                    <th id="math-mark">Toán</th>
+                    <th id="physical-mark">Lý</th>
+                    <th id="chemistry-mark">Hóa</th>
+                    <th id="average-mark">Điểm Trung Bình</th>
+                    <th id="mark-level">Xếp Loại</th>
+                    <th id="mark-result">Kết Quả</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <!-- Table End -->
+        </div>
+    </main>
+    <!-- Main Start -->
+
+    <!-- Link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.js"></script>
+
+    <!-- Link js -->
+    <script src="index1.js"></script>
+</body>
+</html>
